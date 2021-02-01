@@ -2,19 +2,23 @@
 This shapefile was obtained from the Delaware FirstMap Data website and processed by members of the Metric Geometry and Gerrymandering Group (MGGG).
 
 ## Sources
-The Indiana prescinct shapefile was obtained from [Delaware FirstMap Data](http://opendata.firstmap.delaware.gov/datasets/delaware-election-boundaries), a GIS service of the State of Delaware. Election data come from the [Delaware Department of Elections](https://elections.delaware.gov/index.shtml). 
+The Indiana precinct shapefile was obtained from [Delaware FirstMap Data](http://opendata.firstmap.delaware.gov/datasets/delaware-election-boundaries), a GIS service of the State of Delaware. Election data come from the [Delaware Department of Elections](https://elections.delaware.gov/index.shtml). 
 
 2010 Decennial Census demographic data were downloaded from the [Census API](https://api.census.gov/data/2010/dec/sf1). The 2010 census block shapefile for Indiana was downloaded from the US Census Bureau’s [TIGER/Line Shapefiles](https://www.census.gov/geographies/mapping-files/time-series/geo/tiger-line-file.html).
 
 
 ## Processing
-Some very limited merging of precincts in the tabular election data was necessary to join to the precinct shapefile. Data from three countywide precincts that reported absentee votes were disaggregated by voting age population using MGGG’s proration software. Demographic data was aggregated from the block level using MGGG’s proration software. State legislative district IDs were also assigned to precincts using this package.
+Some very limited merging of precincts in the tabular election data was necessary to join to the precinct shapefile. Demographic data was aggregated from the block level using MGGG’s proration software. State legislative district IDs were also assigned to precincts using this package.
 
 
 ## Metadata
-* `EDRD_2012`: Precinct name
-* `POPULATION`: State-reported population
-* `District_1`: Precinct name
+* `STATE`: State
+* `STATEFP`: State FIPS code
+* `COUNTY`: County name
+* `COUNTYFP`: County FIPS code
+* `Precinct`: Precinct name
+* `CODE`: Precinct code
+
 *	`PRES16D`: Number of votes for 2016 Democratic presidential candidate
 *	`PRES16R`: Number of votes for 2016 Republican presidential candidate
 *	`SEN16D`: Number of votes for 2016 Democratic senate candidate
@@ -48,6 +52,7 @@ Some very limited merging of precincts in the tabular election data was necessar
 * `NHPIVAP`: Native Hawaiian and Pacific Islander, non-hispanic, voting age population from 2010 Decennial Census
 * `OTHERVAP`: Other race, non-hispanic, voting age population from 2010 Decennial Census
 * `2MOREVAP`: Two or more races, non-hispanic, voting age population from 2010 Decennial Census
+* `CD`: Congressional district
 * `HDIST`: State House district
 * `SEND`: State Senate district
 
