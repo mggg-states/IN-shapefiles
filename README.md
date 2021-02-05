@@ -14,15 +14,13 @@ Some very limited merging of precincts in the tabular election data was necessar
 ## Metadata
 * `STATE`: State
 * `STATEFP`: State FIPS code
-* `COUNTY`: County name
 * `COUNTYFP`: County FIPS code
 * `Precinct`: Precinct name
-* `CODE`: Precinct code
-
 *	`PRES16D`: Number of votes for 2016 Democratic presidential candidate
 *	`PRES16R`: Number of votes for 2016 Republican presidential candidate
 *	`SEN16D`: Number of votes for 2016 Democratic senate candidate
 * `SEN16R`: Number of votes for 2016 Republican senate candidate
+* `SEN16L`: Number of votes for 2016 Libertarian senate candidate
 * `AG16D`: Number of votes for 2016 Democratic attorney general candidate
 *	`AG16R`: Number of votes for 2016 Republican attorney general candidate
 *	`GOV16D`: Number of votes for 2016 Democratic gubernatorial candidate
@@ -60,4 +58,4 @@ Some very limited merging of precincts in the tabular election data was necessar
 This shapefile uses a NAD83/Indiana East (ft) projection (ESPG:2965).
 
 ## Rating
-We give these shapefiles an A rating. All data was obtained from the state government and was processed by MGGG staff.
+We give these shapefiles an A rating. All data was obtained from the state government and was processed by MGGG staff. Discrepancies from state-reported totals are....
