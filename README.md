@@ -8,7 +8,7 @@ The 2010 Decennial Census block shapefile and demographic data were downloaded f
 
 
 ## Processing
-This shapefile required minimal processing. No digitizing, merging, or splitting was required to process. Demographic data were aggregated from the block level using MGGG’s geospatial toolkit.
+This shapefile required minimal processing. No digitizing, merging, or splitting of precincts was required. Demographic data were aggregated from the block level using MGGG’s geospatial toolkit.
 
 ## Metadata
 * `STATE`: State
