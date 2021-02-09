@@ -1,15 +1,14 @@
 # Indiana Election Shapefiles
-This shapefile was obtained from the Delaware FirstMap Data website and processed by members of the Metric Geometry and Gerrymandering Group (MGGG).
+This data was processed by members of the MGGG Redistricting Lab and student research assistant, Rachel Herman.
 
 ## Sources
-The Indiana precinct shapefile was obtained from [Delaware FirstMap Data](http://opendata.firstmap.delaware.gov/datasets/delaware-election-boundaries), a GIS service of the State of Delaware. Election data come from the [Delaware Department of Elections](https://elections.delaware.gov/index.shtml). 
+The 2016 precinct boundary shapefile was obtained by contacting the Indiana Secretary of State Election Division. The 2016 election data was downloaded from MIT Election and Data Science Lab, except for attorney general results for Hancock County, Jefferson County, and Madison County. Hancock County election results are from a contact in the County Clerk's Election Department, Jefferson County results are from a contact in the County Clerk's Office of Voter Registration, and Madison County Results are from the county's [Election Board](https://www.madisoncounty.in.gov/assets/precinct-report-------madison-county2016.pdf).
 
-2010 Decennial Census demographic data were downloaded from the [Census API](https://api.census.gov/data/2010/dec/sf1). The 2010 census block shapefile for Indiana was downloaded from the US Census Bureau’s [TIGER/Line Shapefiles](https://www.census.gov/geographies/mapping-files/time-series/geo/tiger-line-file.html).
+The 2010 Decennial Census block shapefile and demographic data were downloaded from the [National Historic GIS](https://data2.nhgis.org/main#).
 
 
 ## Processing
-Some very limited merging of precincts in the tabular election data was necessary to join to the precinct shapefile. Demographic data was aggregated from the block level using MGGG’s proration software. State legislative district IDs were also assigned to precincts using this package.
-
+This shapefile required minimal processing. No digitizing, merging, or splitting was required to process. Demographic data were aggregated from the block level using MGGG’s geospatial toolkit.
 
 ## Metadata
 * `STATE`: State
@@ -58,4 +57,4 @@ Some very limited merging of precincts in the tabular election data was necessar
 This shapefile uses a NAD83/Indiana East (ft) projection (ESPG:2965).
 
 ## Rating
-We give these shapefiles an A rating. All data was obtained from the state government and was processed by MGGG staff. Discrepancies from state-reported totals are....
+We give the shapefile an A- rating. Precinct data were obtained from the state government and election results data required only minor corrections in three counties to reduce discrepancies. Discrepancies from state-reported totals are at most 0.1%.
