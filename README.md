@@ -54,7 +54,7 @@ This shapefile required minimal processing. No digitizing, merging, or splitting
 * `SEND`: State Senate district
 
 ## Projection
-This shapefile uses a NAD83/Indiana East (ft) projection (ESPG:2965).
+This shapefile uses a NAD83/Indiana East (ft) projection (EPSG:2965).
 
 ## Rating
 We give the shapefile an A- rating. Precinct data were obtained from the state government and election results data required only minor corrections in three counties to reduce discrepancies. Discrepancies from state-reported totals are at most 0.1%.
